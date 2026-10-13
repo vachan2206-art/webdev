@@ -605,11 +605,9 @@ getBtn.addEventListener("click", async function() {
     "title": "at nam consequatur ea labore ea harum",
     "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
   }
-]"
-
-        );
-        if(!response.ok){
-            throw new Error("HTTP Error:"+response.status);
+");
+        if (!response.ok) {
+            throw new Error("HTTP Error:" + response.status);
         }
         const data = await response.json();
         output.textContent = JSON.stringify(data, null, 2);
